@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 
 #define nome do app usando o nome do arquivo
 app = Dash(__name__)
-
+server = app.server
 #pandas lendo nosso CSV
 df = pd.read_csv('dfEvasao.csv')
 dfPura = pd.read_csv('dfFormaEvPura.csv')
